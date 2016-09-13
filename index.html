@@ -4,14 +4,21 @@
 	<title>Leaflet Layers Control Example</title>
 	<meta charset="utf-8" />
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
 
 	<style>
+/*body-tag for fullscreen*/	
+	body {
+		padding: 0;
+		margin: 0;
+	}
+	html, body, 
 		#map {
-			width: 1024px;
-			height: 786px;
+			height: 100%; //fullscreen
+			/*width: 1024px;
+			height: 768px;*/
 		}
 
 		.info {
